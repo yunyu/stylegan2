@@ -8,6 +8,7 @@ python project_images.py aligned_images/ generated_images/
 ### Credits
 This fork [`woctezuma/stylegan2/tree/tiled-projector`](https://github.com/woctezuma/stylegan2/tree/tiled-projector) is created in the context of:
 -   [`woctezuma/stylegan2-projecting-images`](https://github.com/woctezuma/stylegan2-projecting-images)
+
 and based on commits found in:
 -   [`rolux/stylegan2encoder`](https://github.com/rolux/stylegan2encoder)
 -   [`kreativai/stylegan2encoder`](https://github.com/kreativai/stylegan2encoder)
