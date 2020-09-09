@@ -1,9 +1,15 @@
 ### Usage
+1. Alignment
 ```bash
 python align_images.py raw_images/ aligned_images/
 ```
+2. Either the default projection with `W(1, 512)`:
 ```bash
-python project_images.py aligned_images/ generated_images/
+python project_images.py aligned_images/ generated_images/ --video --video-mode=2
+```
+2. Or the modified projection with `W(18, 512)`:
+```bash
+python project_images.py aligned_images/ generated_images/ --video --video-mode=2 --no-tiled
 ```
 ### Credits
 This fork [`woctezuma/stylegan2/tree/tiled-projector`](https://github.com/woctezuma/stylegan2/tree/tiled-projector) is created in the context of:
