@@ -5,7 +5,7 @@ python align_images.py raw_images/ aligned_images/
 ```
 2. Either `--tiled` (default)
 
-This is the projector suggested in [Nivida's implementation](https://github.com/NVlabs/stylegan2), using `W(1, 512)`.
+This is the projector suggested in [Nvidia's implementation](https://github.com/NVlabs/stylegan2), using `W(1, 512)`.
 ```bash
 python project_images.py aligned_images/ generated_images_tiled/ --video True --video-mode 2
 ```
