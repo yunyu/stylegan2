@@ -3,19 +3,26 @@
 ```bash
 python align_images.py raw_images/ aligned_images/
 ```
-2. Either the default projection with `W(1, 512)`:
+2. Either `--tiled` (default)
+
+This is the projector suggested in [Nivida's implementation](https://github.com/NVlabs/stylegan2), using `W(1, 512)`.
 ```bash
-python project_images.py aligned_images/ generated_images/ --video --video-mode=2
+python project_images.py aligned_images/ generated_images_tiled/ --video True --video-mode 2
 ```
-2. Or the modified projection with `W(18, 512)`:
+2. Or `--no-tiled`
+
+This is the projector suggested in [`rolux/stylegan2encoder`](https://github.com/rolux/stylegan2encoder), using `W(18, 512)`.
+
+Visual fidelity is higher, but semantic fidelity is lower.
 ```bash
-python project_images.py aligned_images/ generated_images/ --video --video-mode=2 --no-tiled
+python project_images.py aligned_images/ generated_images_no_tiled/ --video True --video-mode 2 --no-tiled
 ```
 ### Credits
 This fork [`woctezuma/stylegan2/tree/tiled-projector`](https://github.com/woctezuma/stylegan2/tree/tiled-projector) is created in the context of:
 -   [`woctezuma/stylegan2-projecting-images`](https://github.com/woctezuma/stylegan2-projecting-images)
 
 and based on commits found in:
+-   [`NVlabs/stylegan2`](https://github.com/NVlabs/stylegan2)
 -   [`rolux/stylegan2encoder`](https://github.com/rolux/stylegan2encoder)
 -   [`kreativai/stylegan2encoder`](https://github.com/kreativai/stylegan2encoder)
 
