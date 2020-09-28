@@ -15,7 +15,7 @@ from training import misc
 
 class Projector:
     def __init__(self,
-        vgg16_pkl                       = 'http://d36zk2xti64re0.cloudfront.net/stylegan1/networks/metrics/vgg16_zhang_perceptual.pkl',
+        vgg16_pkl                       = 'https://nvlabs-fi-cdn.nvidia.com/stylegan/networks/metrics/vgg16_zhang_perceptual.pkl',
         num_steps                       = 1000,
         initial_learning_rate           = 0.1,
         initial_noise_factor            = 0.05,
