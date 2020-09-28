@@ -7,6 +7,10 @@ python align_images.py raw_images/ aligned_images/
 
 This is the projector suggested in [Nvidia's implementation](https://github.com/NVlabs/stylegan2), using `W(1, 512)`.
 ```bash
+python project_images.py aligned_images/ generated_images_tiled/
+```
+or:
+```bash
 python project_images.py aligned_images/ generated_images_tiled/ --video True --video-mode 2
 ```
 2. Or `--no-tiled`
@@ -14,6 +18,10 @@ python project_images.py aligned_images/ generated_images_tiled/ --video True --
 This is the projector suggested in [`rolux/stylegan2encoder`](https://github.com/rolux/stylegan2encoder), using `W(18, 512)`.
 
 Visual fidelity is higher, but semantic fidelity is lower.
+```bash
+python project_images.py aligned_images/ generated_images_no_tiled/ --no-tiled
+```
+or:
 ```bash
 python project_images.py aligned_images/ generated_images_no_tiled/ --video True --video-mode 2 --no-tiled
 ```
