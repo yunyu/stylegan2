@@ -242,7 +242,7 @@ def training_loop(
     # Finalize graph.
     with tf.device('/gpu:0'):
         try:
-            peak_gpu_mem_op = tf.contrib.memory_stats.MaxBytesInUse()
+            peak_gpu_mem_op = tf.constant(0)
         except tf.errors.NotFoundError:
             peak_gpu_mem_op = tf.constant(0)
     tflib.init_uninitialized_vars()
